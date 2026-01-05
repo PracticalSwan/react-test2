@@ -1,16 +1,45 @@
-# React + Vite
+# React Card Component Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates creating and using reusable React components with styling.
 
-Currently, two official plugins are available:
+## What I Learned
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Creating Reusable Components
+- Built a `Card` component that displays profile information
+- The component is self-contained and can be reused multiple times
+- Each card includes an image, title, and description text
 
-## React Compiler
+### 2. Component Composition
+- Used the `Card` component multiple times in the `App` component
+- Demonstrated how to render the same component repeatedly using JSX
+- Shows the power of component reusability in React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. JSX and HTML-like Syntax
+- Created card structure using JSX elements (`div`, `img`, `h2`, `p`)
+- Used `className` instead of `class` for CSS styling
+- Added the `alt` attribute for image accessibility
 
-## Expanding the ESLint configuration
+### 4. Component Structure
+The `Card` component includes:
+- **Image**: Profile picture from an external URL
+- **Title**: Person's name
+- **Description**: Personal information text
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 5. CSS Styling
+- Applied CSS classes to style the card components:
+  - `card`: Container styling
+  - `card-image`: Image styling
+  - `card-title`: Title styling
+  - `card-text`: Description text styling
+
+## Project Structure
+
+- `App.jsx`: Main component that renders multiple `Card` components
+- `Card.jsx`: Reusable card component with profile information
+
+## Key Concepts
+
+- **Component Reusability**: Same component used multiple times without rewriting code
+- **Component-Based Architecture**: Breaking UI into independent, reusable pieces
+- **JSX Syntax**: Writing HTML-like code in JavaScript
+- **CSS Integration**: Styling components using className attributes
